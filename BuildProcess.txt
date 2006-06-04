@@ -1,0 +1,19 @@
+These Instructions apply to TI Flash Studio Version 1.1 Build 37
+
+To Build RoboCalc:
+1. always run clean.bat before opening a .fsp file
+2. Open either robocalc89.FSP or robocalc92p.FSP
+3. Change build type from Debug to Release
+4. Press F7 (Build)
+5. Repeat Steps 1 through 4 for the remaining .FSP file.
+
+
+
+
+4.5" diameter
+2.25" / 5.715cm radius
+15.8963" circumference
+40.3765 cm circumference
+
+
+what if T is archived or locked?
