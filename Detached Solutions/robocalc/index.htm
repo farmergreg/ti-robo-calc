@@ -31,7 +31,7 @@
             by Detached Solutions and has no relationship with Norland Research!</font></p>
         <p><strong>All RoboCalc commands follow a simple three part format which
             makes them easy to remember:</strong></p>
-        </div>
+        
         <ol>
           <li> The first section indicates the mode of operation tells the robot
             how to use it's sensors:
@@ -49,7 +49,7 @@
             </ol>
           </li>
           <li>The third section tells the right tire how to behave:
-            </div>
+            
             <ol>
               <li>F=Forward </li>
               <li>N=Neutural</li>
@@ -74,67 +74,71 @@
             </td>
           </tr>
           <tr>
-            <td>about</td>
+            <td><font face="Courier New, Courier, mono">about</font></td>
             <td>Show the RoboCalc About Dialog</td>
-            <td><p>AboutRC()<br />
+            <td><p><font face="Courier New, Courier, mono">AboutRC()</font><br>
+              <br />
                 Show the RoboCalc About Screen</p>
               <p>Easter Egg: Type a capitol G in this screen to see some action!</p>
             </td>
           </tr>
           <tr>
-            <td>checkbot</td>
+            <td><font face="Courier New, Courier, mono">checkbot</font></td>
             <td>Check If The Robot Is Connected Properly</td>
-            <td><p>CheckBot()<br />
+            <td><p><font face="Courier New, Courier, mono">CheckBot()</font><br>
+              <br />
                 Checks for a connection to the robot, resets the link interface
                     and sets the robot to factory defaults. This function returns
                     true if the robot is ON and connected to the calculator.</p>
             </td>
           </tr>
           <tr>
-            <td>clb</td>
+            <td><font face="Courier New, Courier, mono">clb</font></td>
             <td>Calibrate Left Wheel, Backward Dir</td>
-            <td>CLB(INT)<br />
+            <td><font face="Courier New, Courier, mono">CLB(INT)</font><br>              <br />
               Calibrate left backward pulse length (valid range is 0 - 255).</td>
           </tr>
           <tr>
-            <td>clf</td>
+            <td><font face="Courier New, Courier, mono">clf</font></td>
             <td>Calibrate Left Wheel, Forward Dir</td>
-            <td>CLF(INT)<br />
+            <td><font face="Courier New, Courier, mono">CLF(INT)</font><br>              <br />
               Calibrate left forward pulse length (valid range is 255 - 0).</td>
           </tr>
           <tr>
-            <td>crb</td>
+            <td><font face="Courier New, Courier, mono">crb</font></td>
             <td>Calibrate Right Wheel, Backward Dir</td>
-            <td>CRB(INT)<br />
+            <td><font face="Courier New, Courier, mono">CRB(INT)</font><br>              <br />
               Calibrate right backward pulse length (valid range is 255 - 0).</td>
           </tr>
           <tr>
-            <td>crf</td>
+            <td><font face="Courier New, Courier, mono">crf</font></td>
             <td>Calibrate Right Wheel, Forward Dir</td>
-            <td>CRF(INT)<br />
+            <td><font face="Courier New, Courier, mono">CRF(INT)</font><br>              <br />
               Calibrate right forward pulse length (valid range is 0 - 255).</td>
           </tr>
           <tr>
-            <td>cs</td>
+            <td><font face="Courier New, Courier, mono">cs</font></td>
             <td>Check Bumper Switches</td>
-            <td>CS()<br />
-              Find which bumper switch caused the robot to stop.<br />
-              <br />
-              1 = Left Switch<br />
-              2 = Right Switch<br />
-              3 = Both Switches<br />
+            <td><p><font face="Courier New, Courier, mono">CS()<br>
+            </font><br />
+                Find which bumper switch caused the robot to stop.<br />
+                <br />
+                1 = Left Switch<br />
+                2 = Right Switch<br />
+                3 = Both Switches<br />
+              </p>
             </td>
           </tr>
           <tr>
-            <td>csd</td>
+            <td><font face="Courier New, Courier, mono">csd</font></td>
             <td>Use Factory Default Calibration Settings</td>
-            <td>CSD()<br />
+            <td><font face="Courier New, Courier, mono">CSD()</font><br />
               Resets all robot calibration settings to their defaults.</td>
           </tr>
           <tr>
-            <td>csn</td>
+            <td><font face="Courier New, Courier, mono">csn</font></td>
             <td>Check Bumper Switches Now</td>
-            <td>CSN()<br />
+            <td><font face="Courier New, Courier, mono">CSN()</font><br>              <br />
               Check to see if a bumper switch is pressed NOW.<br />
               <br />
               1 = Left Switch<br />
@@ -142,234 +146,234 @@
               3 = Both Switches</td>
           </tr>
           <tr>
-            <td>distcal</td>
+            <td><font face="Courier New, Courier, mono">distcal</font></td>
             <td>Calibration for Drive & Turn Commands</td>
-            <td>DistCal()<br />
+            <td><font face="Courier New, Courier, mono">DistCal()</font><br>              <br />
               Allow the robot to move one unit of distance forward before the
                 bumper is triggered. Distance traveled should be equal to the
                 circumference of the wheels.</td>
           </tr>
           <tr>
-            <td>drive</td>
+            <td><font face="Courier New, Courier, mono">drive</font></td>
             <td>Robot moves forward/backward x units</td>
-            <td>Drive(INT)<br />
+            <td><font face="Courier New, Courier, mono">Drive(INT)</font><br>              <br />
               Move the robot forward x units. If the unit value is negative,
                 the robot moves in reverse.<br />
               Distance traveled is 1/3 of distance set with distcal().</td>
           </tr>
           <tr>
-            <td>hitec</td>
+            <td><font face="Courier New, Courier, mono">hitec</font></td>
             <td>Switches to Hitec Servo Mode</td>
-            <td>Hitec()<br />
+            <td><font face="Courier New, Courier, mono">Hitec()</font><br>              <br />
               If your robot uses Hitec servos, run this command to calibrate
                 the robot so that it works correctly with RoboCalc.</td>
           </tr>
           <tr>
-            <td>resetlnk</td>
+            <td><font face="Courier New, Courier, mono">resetlnk</font></td>
             <td>Reset the robot link interface</td>
-            <td>ResetLnk()<br />
+            <td><font face="Courier New, Courier, mono">ResetLnk()</font><br>              <br />
               Follow this sequence to reset the robot link interface:<br />
               1. Turn off the robot<br />
               2. Execute this command<br />
               3.Turn Robot Back On</td>
           </tr>
           <tr>
-            <td>sbb</td>
+            <td><font face="Courier New, Courier, mono">sbb</font></td>
             <td>Switch;Backward;Backward</td>
-            <td>SBB()<br />
+            <td><font face="Courier New, Courier, mono">SBB()</font><br>              <br />
               Move backward until a bumper switch is triggered.</td>
           </tr>
           <tr>
-            <td>sbf</td>
+            <td><font face="Courier New, Courier, mono">sbf</font></td>
             <td>Switch;Backward;Forward</td>
-            <td>SBF()<br />
+            <td><font face="Courier New, Courier, mono">SBF()</font><br>              <br />
               Turn in place to the left until a bumper switch is triggered.</td>
           </tr>
           <tr>
-            <td>sbn</td>
+            <td><font face="Courier New, Courier, mono">sbn</font></td>
             <td>Switch;Backward;Neutral</td>
-            <td>SBN()<br />
+            <td><font face="Courier New, Courier, mono">SBN()</font><br>              <br />
               Turn left while pivoting on the right wheel until a bumper switch
                 is triggered.</td>
           </tr>
           <tr>
-            <td>sfb</td>
+            <td><font face="Courier New, Courier, mono">sfb</font></td>
             <td>Switch;Forward;Backward</td>
-            <td>SFB()<br />
+            <td><font face="Courier New, Courier, mono">SFB()</font><br>              <br />
               Turn in place to the right until a bumper switch is triggered.</td>
           </tr>
           <tr>
-            <td>sff</td>
+            <td><font face="Courier New, Courier, mono">sff</font></td>
             <td>Switch;Forward;Forward</td>
-            <td>SFF()<br />
+            <td><font face="Courier New, Courier, mono">SFF()</font><br>              <br />
               Move forward until a bumper switch is triggered.</td>
           </tr>
           <tr>
-            <td>sfn</td>
+            <td><font face="Courier New, Courier, mono">sfn</font></td>
             <td>Switch;Forward;Neutral</td>
-            <td>SFN()<br />
+            <td><font face="Courier New, Courier, mono">SFN()</font><br>              <br />
               Turn right while pivoting on the right wheel until a bumper switch
                 is triggered.</td>
           </tr>
           <tr>
-            <td>snb</td>
+            <td><font face="Courier New, Courier, mono">snb</font></td>
             <td>Switch;Neutral;Backward</td>
-            <td>SNB()<br />
+            <td><font face="Courier New, Courier, mono">SNB()</font><br>              <br />
               Turn right while pivoting on the left wheel until a bumper switch
                 is triggered.</td>
           </tr>
           <tr>
-            <td>snf</td>
+            <td><font face="Courier New, Courier, mono">snf</font></td>
             <td>Switch;Neutral;Forward</td>
-            <td>SNF()<br />
+            <td><font face="Courier New, Courier, mono">SNF()</font><br>              <br />
               Turn left while pivoting on the left wheel until a bumper switch
                 is triggered.</td>
           </tr>
           <tr>
-            <td>snn</td>
+            <td><font face="Courier New, Courier, mono">snn</font></td>
             <td>Switch;Neutral;Neutral</td>
-            <td>SNN()<br />
+            <td><font face="Courier New, Courier, mono">SNN()</font><br>              <br />
               Do not move; wait until a bumper switch is triggered.</td>
           </tr>
           <tr>
-            <td>tbb</td>
+            <td><font face="Courier New, Courier, mono">tbb</font></td>
             <td>Timed;Backward;Backward</td>
-            <td>TBB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TBB(INT)</font><br>              <br />
               Move in reverse until the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tbf</td>
+            <td><font face="Courier New, Courier, mono">tbf</font></td>
             <td>Timed;Backward;Forward</td>
-            <td>TBF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TBF(INT)</font><br>              <br />
               Turn in place to the left until the specified time in milliseconds
                 elapses.</td>
           </tr>
           <tr>
-            <td>tbn</td>
+            <td><font face="Courier New, Courier, mono">tbn</font></td>
             <td>Timed;Backward;Neutral</td>
-            <td>TBN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TBN(INT)</font><br>              <br />
               Turn left while pivoting on the right wheel until the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tfb</td>
+            <td><font face="Courier New, Courier, mono">tfb</font></td>
             <td>Timed;Forward;Backward</td>
-            <td>TFB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TFB(INT)</font><br>              <br />
               Turn in place to the right until the specified time in milliseconds
                 elapses.</td>
           </tr>
           <tr>
-            <td>tff</td>
+            <td><font face="Courier New, Courier, mono">tff</font></td>
             <td>Timed;Forward;Forward</td>
-            <td>TFF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TFF(INT)</font><br>              <br />
               Move forward until the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tfn</td>
+            <td><font face="Courier New, Courier, mono">tfn</font></td>
             <td>Timed;Forward;Neutral</td>
-            <td>TFN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TFN(INT)</font><br>              <br />
               Turn right while pivoting on the right wheel until the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tnb</td>
+            <td><font face="Courier New, Courier, mono">tnb</font></td>
             <td>Timed;Neutral;Backward</td>
-            <td>TNB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TNB(INT)</font><br>              <br />
               Turn right while pivoting on the left wheel until the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tnf</td>
+            <td><font face="Courier New, Courier, mono">tnf</font></td>
             <td>Timed;Neutral;Forward</td>
-            <td>TNF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TNF(INT)</font><br>              <br />
               Turn left while pivoting on the left wheel until the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tnn</td>
+            <td><font face="Courier New, Courier, mono">tnn</font></td>
             <td>Timed;Neutral;Neutral</td>
-            <td>TNN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TNN(INT)</font><br>              <br />
               Do not move; wait until the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsbb</td>
+            <td><font face="Courier New, Courier, mono">tsbb</font></td>
             <td>Timed&Switch;Backward;Backward</td>
-            <td>TSBB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSBB(INT)</font><br>              <br />
               Move in reverse until a bumper switch is triggered, or the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsbf</td>
+            <td><font face="Courier New, Courier, mono">tsbf</font></td>
             <td>Timed&Switch;Backward;Forward</td>
-            <td>TSBF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSBF(INT)</font><br>              <br />
               Turn in place to the left until a bumper switch is triggered, or
                 the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsbn</td>
+            <td><font face="Courier New, Courier, mono">tsbn</font></td>
             <td>Timed&Switch;Backward;Neutral</td>
-            <td>TSBN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSBN(INT)</font><br>              <br />
               Turn left while pivoting on the right wheel until a bumper switch
                 is triggered, or the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsfb</td>
+            <td><font face="Courier New, Courier, mono">tsfb</font></td>
             <td>Timed&Switch;Forward;Backward</td>
-            <td>TSFB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSFB(INT)</font><br>              <br />
               Turn in place to the right until a bumper switch is triggered,
                 or the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsff</td>
+            <td><font face="Courier New, Courier, mono">tsff</font></td>
             <td>Timed&Switch;Forward;Forward</td>
-            <td>TSFF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSFF(INT)</font><br>              <br />
               Move forward until a bumper switch is triggered, or the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsfn</td>
+            <td><font face="Courier New, Courier, mono">tsfn</font></td>
             <td>Timed&Switch;Forward;Neutral</td>
-            <td>TSFN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSFN(INT)</font><br />
               Turn right while pivoting on the right wheel until a bumper switch
                 is triggered, or the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsnb</td>
+            <td><font face="Courier New, Courier, mono">tsnb</font></td>
             <td>Timed&Switch;Neutral;Backward</td>
-            <td>TSNB(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSNB(INT)</font><br>              <br />
               Turn right while pivoting on the left wheel until a bumper switch
                 is triggered, or the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsnf</td>
+            <td><font face="Courier New, Courier, mono">tsnf</font></td>
             <td>Timed&Switch;Neutral;Forward</td>
-            <td>TSNF(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSNF(INT)</font><br>              <br />
               Turn left while pivoting on the left wheel until a bumper switch
                 is triggered, or the specified time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>tsnn</td>
+            <td><font face="Courier New, Courier, mono">tsnn</font></td>
             <td>Timed&Switch;Neutral;Neutral</td>
-            <td>TSNN(INT)<br />
+            <td><font face="Courier New, Courier, mono">TSNN(INT)</font><br>              <br />
               Do not move; wait until a bumper switch is triggered, or the specified
                 time in milliseconds elapses.</td>
           </tr>
           <tr>
-            <td>turn</td>
+            <td><font face="Courier New, Courier, mono">turn</font></td>
             <td>Robot Turns x degrees</td>
-            <td>Turn(INT)<br />
+            <td><font face="Courier New, Courier, mono">Turn(INT)</font><br>              <br />
               Turns the robot the number of degrees specified. You must first
                 calibrate the robot using distcal().</td>
           </tr>
           <tr>
-            <td>version</td>
+            <td><font face="Courier New, Courier, mono">version</font></td>
             <td>Returns the version number of RoboCalc</td>
-            <td>Version()<br />
+            <td><font face="Courier New, Courier, mono">Version()</font><br>              <br />
               Returns the RoboCalc version number as a decimal value.</td>
           </tr>
         </table>
         <p>$Id$</p>
-        </div>
+        
       </td>
     </tr>
   </table>
