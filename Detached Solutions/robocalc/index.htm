@@ -22,198 +22,353 @@
           </tr>
         </table>
         <p><font size="+1" face="Arial"><b><u>About <em>RoboCalc</em></u></b></font></p>
-        <div class="text1">
-          <p><font size="-1" face="Verdana">The RoboCalc project is designed
-              to lower the learning curve required to operate and program the
-              <a href="http://www.smallrobot.com/" target="_blank">Norland Research
-              Robot</a>. This program is a great addition to
-              any classroom utilizing Norland Research's robot! With RoboCalc,
-              students can easily control the robot using easy to remember mnemonics instead
-          of hard to remember numbers. RoboCalc has been designed and developed
-          independently by Detached Solutions and has no relationship with Norland
-          Research!</font></p>
-          <p><strong>All RoboCalc commands follow a simple three part format
-          which makes them easy to remember:</strong></p>
-        </div>        
+        <p><font size="-1" face="Verdana">The RoboCalc project is designed to
+            lower the learning curve required to operate and program the <a href="http://www.smallrobot.com/" target="_blank">Norland
+            Research Robot</a>. This program is a great addition to any classroom
+            utilizing Norland Research's robot! With RoboCalc, students can easily
+            control the robot using easy to remember mnemonics instead of hard
+            to remember numbers. RoboCalc has been designed and developed independently
+            by Detached Solutions and has no relationship with Norland Research!</font></p>
+        <p><strong>All RoboCalc commands follow a simple three part format which
+            makes them easy to remember:</strong></p>
+        </div>
         <ol>
-          <li>
-            <div class="text1">The first section indicates the mode of operation
-              tells the robot how to use it's sensors:</div>
+          <li> The first section indicates the mode of operation tells the robot
+            how to use it's sensors:
             <ol>
               <li>T=Timed</li>
               <li>S=Switch</li>
               <li>TS=Time and Switch</li>
             </ol>
           </li>
-          <li>
-            <div class="text1">The second section tells
-              the left tire how to behave:</div>
+          <li>The second section tells the left tire how to behave:
             <ol>
               <li>F=Forward</li>
               <li>N=Neutural</li>
               <li>B=Backward</li>
             </ol>
           </li>
-          <li>
-            <div class="text1">The third section tells the right
-                  tire
-                          how to behave:</div>
+          <li>The third section tells the right tire how to behave:
+            </div>
             <ol>
-              <li>F=Forward              </li>
+              <li>F=Forward </li>
               <li>N=Neutural</li>
               <li>B=Backward</li>
             </ol>
           </li>
         </ol>
-        <div class="text1">
-          <p>When we put this all together, we can make the robot perform an
-            action. For example, if we want the robot to move forward for one
-            second, we would write the command TFF(1000). If we want the robot
-            to move forward until it hits an object with the switch, we would
-            write SFF() in our TI-Basic program.</p>
-          <hr>
-          <p><strong>Command Reference:</strong></p>
-          <table width="75%" border="1">
-            <tr>
-              <td><div align="center"><strong>Command</strong></div></td>
-              <td><div align="center"><strong>Short Description</strong></div></td>
-              <td><div align="center"><strong>Full Description</strong></div></td>
-            </tr>
-            <tr><td>about</td>
-  <td>Show the RoboCalc About Dialog</td>
-  <td><p>AboutRC()<br />
-    Show the RoboCalc About Screen</p>
-    <p>Easter Egg: Type a capitol G in this screen to see some action!</p></td></tr>
-  <tr><td>checkbot</td>
-  <td>Check If The Robot Is Connected Properly</td>
-  <td><p>CheckBot()<br />
-    Checks for a connection to the robot, resets the link interface and sets
-        the robot to factory defaults. This function returns true if the robot
-        is ON and connected to the calculator.</p>
-    </td></tr>
-  <tr><td>clb</td>
-  <td>Calibrate Left Wheel, Backward Dir</td>
-  <td>CLB(INT)<br />Calibrate left backward pulse length (valid range is 0 - 255).</td></tr>
-  <tr><td>clf</td>
-  <td>Calibrate Left Wheel, Forward Dir</td>
-  <td>CLF(INT)<br />Calibrate left forward pulse length (valid range is 255 - 0).</td></tr>
-  <tr><td>crb</td>
-  <td>Calibrate Right Wheel, Backward Dir</td>
-  <td>CRB(INT)<br />Calibrate right backward pulse length (valid range is 255 - 0).</td></tr>
-  <tr><td>crf</td>
-  <td>Calibrate Right Wheel, Forward Dir</td>
-  <td>CRF(INT)<br />Calibrate right forward pulse length (valid range is 0 - 255).</td></tr>
-  <tr><td>cs</td>
-  <td>Check Bumper Switches</td>
-  <td>CS()<br />Find which bumper switch caused the robot to stop.<br /><br />1 = Left Switch<br />2 = Right Switch<br />3 = Both Switches<br /></td></tr>
-  <tr><td>csd</td>
-  <td>Use Factory Default Calibration Settings</td>
-  <td>CSD()<br />Resets all robot calibration settings to their defaults.</td></tr>
-  <tr><td>csn</td>
-  <td>Check Bumper Switches Now</td>
-  <td>CSN()<br />Check to see if a bumper switch is pressed NOW.<br /><br />1 = Left Switch<br />2 = Right Switch<br />3 = Both Switches</td>
-  </tr>
-  <tr><td>distcal</td>
-  <td>Calibration for Drive & Turn Commands</td>
-  <td>DistCal()<br />Allow the robot to move one unit of distance forward before the bumper is triggered. Distance traveled should be equal to the circumference of the wheels.</td></tr>
-  <tr><td>drive</td>
-  <td>Robot moves forward/backward x units</td>
-  <td>Drive(INT)<br />Move the robot forward x units. If the unit value is negative, the robot moves in reverse.<br />Distance traveled is 1/3 of distance set with distcal().</td></tr>
-  <tr><td>hitec</td>
-  <td>Switches to Hitec Servo Mode</td>
-  <td>Hitec()<br />If your robot uses Hitec servos, run this command to calibrate the robot so that it works correctly with RoboCalc.</td></tr>
-  <tr><td>resetlnk</td>
-  <td>Reset the robot link interface</td>
-  <td>ResetLnk()<br />Follow this sequence to reset the robot link interface:<br />1. Turn off the robot<br />2. Execute this command<br />3.Turn Robot Back On</td></tr>
-  <tr><td>sbb</td>
-  <td>Switch;Backward;Backward</td>
-  <td>SBB()<br />Move backward until a bumper switch is triggered.</td></tr>
-  <tr><td>sbf</td>
-  <td>Switch;Backward;Forward</td>
-  <td>SBF()<br />Turn in place to the left until a bumper switch is triggered.</td></tr>
-  <tr><td>sbn</td>
-  <td>Switch;Backward;Neutral</td>
-  <td>SBN()<br />Turn left while pivoting on the right wheel until a bumper switch is triggered.</td></tr>
-  <tr><td>sfb</td>
-  <td>Switch;Forward;Backward</td>
-  <td>SFB()<br />Turn in place to the right until a bumper switch is triggered.</td></tr>
-  <tr><td>sff</td>
-  <td>Switch;Forward;Forward</td>
-  <td>SFF()<br />Move forward until a bumper switch is triggered.</td></tr>
-  <tr><td>sfn</td>
-  <td>Switch;Forward;Neutral</td>
-  <td>SFN()<br />Turn right while pivoting on the right wheel until a bumper switch is triggered.</td></tr>
-  <tr><td>snb</td>
-  <td>Switch;Neutral;Backward</td>
-  <td>SNB()<br />Turn right while pivoting on the left wheel until a bumper switch is triggered.</td></tr>
-  <tr><td>snf</td>
-  <td>Switch;Neutral;Forward</td>
-  <td>SNF()<br />Turn left while pivoting on the left wheel until a bumper switch is triggered.</td></tr>
-  <tr><td>snn</td>
-  <td>Switch;Neutral;Neutral</td>
-  <td>SNN()<br />Do not move; wait until a bumper switch is triggered.</td></tr>
-  <tr><td>tbb</td>
-  <td>Timed;Backward;Backward</td>
-  <td>TBB(INT)<br />Move in reverse until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tbf</td>
-  <td>Timed;Backward;Forward</td>
-  <td>TBF(INT)<br />Turn in place to the left until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tbn</td>
-  <td>Timed;Backward;Neutral</td>
-  <td>TBN(INT)<br />Turn left while pivoting on the right wheel until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tfb</td>
-  <td>Timed;Forward;Backward</td>
-  <td>TFB(INT)<br />Turn in place to the right until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tff</td>
-  <td>Timed;Forward;Forward</td>
-  <td>TFF(INT)<br />Move forward until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tfn</td>
-  <td>Timed;Forward;Neutral</td>
-  <td>TFN(INT)<br />Turn right while pivoting on the right wheel until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tnb</td>
-  <td>Timed;Neutral;Backward</td>
-  <td>TNB(INT)<br />Turn right while pivoting on the left wheel until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tnf</td>
-  <td>Timed;Neutral;Forward</td>
-  <td>TNF(INT)<br />Turn left while pivoting on the left wheel until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tnn</td>
-  <td>Timed;Neutral;Neutral</td>
-  <td>TNN(INT)<br />Do not move; wait until the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsbb</td>
-  <td>Timed&Switch;Backward;Backward</td>
-  <td>TSBB(INT)<br />Move in reverse until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsbf</td>
-  <td>Timed&Switch;Backward;Forward</td>
-  <td>TSBF(INT)<br />Turn in place to the left until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsbn</td>
-  <td>Timed&Switch;Backward;Neutral</td>
-  <td>TSBN(INT)<br />Turn left while pivoting on the right wheel until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsfb</td>
-  <td>Timed&Switch;Forward;Backward</td>
-  <td>TSFB(INT)<br />Turn in place to the right until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsff</td>
-  <td>Timed&Switch;Forward;Forward</td>
-  <td>TSFF(INT)<br />Move forward until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsfn</td>
-  <td>Timed&Switch;Forward;Neutral</td>
-  <td>TSFN(INT)<br />Turn right while pivoting on the right wheel until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsnb</td>
-  <td>Timed&Switch;Neutral;Backward</td>
-  <td>TSNB(INT)<br />Turn right while pivoting on the left wheel until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsnf</td>
-  <td>Timed&Switch;Neutral;Forward</td>
-  <td>TSNF(INT)<br />Turn left while pivoting on the left wheel until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>tsnn</td>
-  <td>Timed&Switch;Neutral;Neutral</td>
-  <td>TSNN(INT)<br />Do not move; wait until a bumper switch is triggered, or the specified time in milliseconds elapses.</td></tr>
-  <tr><td>turn</td>
-  <td>Robot Turns x degrees</td>
-  <td>Turn(INT)<br />Turns the robot the number of degrees specified. You must first calibrate the robot using distcal().</td></tr>
-  <tr><td>version</td>
-  <td>Returns the version number of RoboCalc</td>
-  <td>Version()<br />Returns the RoboCalc version number as a decimal value.</td></tr>
-          </table>
-          <p>$Id$</p>
+        <p>When we put this all together, we can make the robot perform an action.
+          For example, if we want the robot to move forward for one second, we
+          would write the command TFF(1000). If we want the robot to move forward
+          until it hits an object with the switch, we would write SFF() in our
+          TI-Basic program.</p>
+        <hr>
+        <p><strong>Command Reference:</strong></p>
+        <table width="75%" border="1">
+          <tr>
+            <td><div align="center"><strong>Command</strong></div>
+            </td>
+            <td><div align="center"><strong>Short Description</strong></div>
+            </td>
+            <td><div align="center"><strong>Full Description</strong></div>
+            </td>
+          </tr>
+          <tr>
+            <td>about</td>
+            <td>Show the RoboCalc About Dialog</td>
+            <td><p>AboutRC()<br />
+                Show the RoboCalc About Screen</p>
+              <p>Easter Egg: Type a capitol G in this screen to see some action!</p>
+            </td>
+          </tr>
+          <tr>
+            <td>checkbot</td>
+            <td>Check If The Robot Is Connected Properly</td>
+            <td><p>CheckBot()<br />
+                Checks for a connection to the robot, resets the link interface
+                    and sets the robot to factory defaults. This function returns
+                    true if the robot is ON and connected to the calculator.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>clb</td>
+            <td>Calibrate Left Wheel, Backward Dir</td>
+            <td>CLB(INT)<br />
+              Calibrate left backward pulse length (valid range is 0 - 255).</td>
+          </tr>
+          <tr>
+            <td>clf</td>
+            <td>Calibrate Left Wheel, Forward Dir</td>
+            <td>CLF(INT)<br />
+              Calibrate left forward pulse length (valid range is 255 - 0).</td>
+          </tr>
+          <tr>
+            <td>crb</td>
+            <td>Calibrate Right Wheel, Backward Dir</td>
+            <td>CRB(INT)<br />
+              Calibrate right backward pulse length (valid range is 255 - 0).</td>
+          </tr>
+          <tr>
+            <td>crf</td>
+            <td>Calibrate Right Wheel, Forward Dir</td>
+            <td>CRF(INT)<br />
+              Calibrate right forward pulse length (valid range is 0 - 255).</td>
+          </tr>
+          <tr>
+            <td>cs</td>
+            <td>Check Bumper Switches</td>
+            <td>CS()<br />
+              Find which bumper switch caused the robot to stop.<br />
+              <br />
+              1 = Left Switch<br />
+              2 = Right Switch<br />
+              3 = Both Switches<br />
+            </td>
+          </tr>
+          <tr>
+            <td>csd</td>
+            <td>Use Factory Default Calibration Settings</td>
+            <td>CSD()<br />
+              Resets all robot calibration settings to their defaults.</td>
+          </tr>
+          <tr>
+            <td>csn</td>
+            <td>Check Bumper Switches Now</td>
+            <td>CSN()<br />
+              Check to see if a bumper switch is pressed NOW.<br />
+              <br />
+              1 = Left Switch<br />
+              2 = Right Switch<br />
+              3 = Both Switches</td>
+          </tr>
+          <tr>
+            <td>distcal</td>
+            <td>Calibration for Drive & Turn Commands</td>
+            <td>DistCal()<br />
+              Allow the robot to move one unit of distance forward before the
+                bumper is triggered. Distance traveled should be equal to the
+                circumference of the wheels.</td>
+          </tr>
+          <tr>
+            <td>drive</td>
+            <td>Robot moves forward/backward x units</td>
+            <td>Drive(INT)<br />
+              Move the robot forward x units. If the unit value is negative,
+                the robot moves in reverse.<br />
+              Distance traveled is 1/3 of distance set with distcal().</td>
+          </tr>
+          <tr>
+            <td>hitec</td>
+            <td>Switches to Hitec Servo Mode</td>
+            <td>Hitec()<br />
+              If your robot uses Hitec servos, run this command to calibrate
+                the robot so that it works correctly with RoboCalc.</td>
+          </tr>
+          <tr>
+            <td>resetlnk</td>
+            <td>Reset the robot link interface</td>
+            <td>ResetLnk()<br />
+              Follow this sequence to reset the robot link interface:<br />
+              1. Turn off the robot<br />
+              2. Execute this command<br />
+              3.Turn Robot Back On</td>
+          </tr>
+          <tr>
+            <td>sbb</td>
+            <td>Switch;Backward;Backward</td>
+            <td>SBB()<br />
+              Move backward until a bumper switch is triggered.</td>
+          </tr>
+          <tr>
+            <td>sbf</td>
+            <td>Switch;Backward;Forward</td>
+            <td>SBF()<br />
+              Turn in place to the left until a bumper switch is triggered.</td>
+          </tr>
+          <tr>
+            <td>sbn</td>
+            <td>Switch;Backward;Neutral</td>
+            <td>SBN()<br />
+              Turn left while pivoting on the right wheel until a bumper switch
+                is triggered.</td>
+          </tr>
+          <tr>
+            <td>sfb</td>
+            <td>Switch;Forward;Backward</td>
+            <td>SFB()<br />
+              Turn in place to the right until a bumper switch is triggered.</td>
+          </tr>
+          <tr>
+            <td>sff</td>
+            <td>Switch;Forward;Forward</td>
+            <td>SFF()<br />
+              Move forward until a bumper switch is triggered.</td>
+          </tr>
+          <tr>
+            <td>sfn</td>
+            <td>Switch;Forward;Neutral</td>
+            <td>SFN()<br />
+              Turn right while pivoting on the right wheel until a bumper switch
+                is triggered.</td>
+          </tr>
+          <tr>
+            <td>snb</td>
+            <td>Switch;Neutral;Backward</td>
+            <td>SNB()<br />
+              Turn right while pivoting on the left wheel until a bumper switch
+                is triggered.</td>
+          </tr>
+          <tr>
+            <td>snf</td>
+            <td>Switch;Neutral;Forward</td>
+            <td>SNF()<br />
+              Turn left while pivoting on the left wheel until a bumper switch
+                is triggered.</td>
+          </tr>
+          <tr>
+            <td>snn</td>
+            <td>Switch;Neutral;Neutral</td>
+            <td>SNN()<br />
+              Do not move; wait until a bumper switch is triggered.</td>
+          </tr>
+          <tr>
+            <td>tbb</td>
+            <td>Timed;Backward;Backward</td>
+            <td>TBB(INT)<br />
+              Move in reverse until the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tbf</td>
+            <td>Timed;Backward;Forward</td>
+            <td>TBF(INT)<br />
+              Turn in place to the left until the specified time in milliseconds
+                elapses.</td>
+          </tr>
+          <tr>
+            <td>tbn</td>
+            <td>Timed;Backward;Neutral</td>
+            <td>TBN(INT)<br />
+              Turn left while pivoting on the right wheel until the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tfb</td>
+            <td>Timed;Forward;Backward</td>
+            <td>TFB(INT)<br />
+              Turn in place to the right until the specified time in milliseconds
+                elapses.</td>
+          </tr>
+          <tr>
+            <td>tff</td>
+            <td>Timed;Forward;Forward</td>
+            <td>TFF(INT)<br />
+              Move forward until the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tfn</td>
+            <td>Timed;Forward;Neutral</td>
+            <td>TFN(INT)<br />
+              Turn right while pivoting on the right wheel until the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tnb</td>
+            <td>Timed;Neutral;Backward</td>
+            <td>TNB(INT)<br />
+              Turn right while pivoting on the left wheel until the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tnf</td>
+            <td>Timed;Neutral;Forward</td>
+            <td>TNF(INT)<br />
+              Turn left while pivoting on the left wheel until the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tnn</td>
+            <td>Timed;Neutral;Neutral</td>
+            <td>TNN(INT)<br />
+              Do not move; wait until the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsbb</td>
+            <td>Timed&Switch;Backward;Backward</td>
+            <td>TSBB(INT)<br />
+              Move in reverse until a bumper switch is triggered, or the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsbf</td>
+            <td>Timed&Switch;Backward;Forward</td>
+            <td>TSBF(INT)<br />
+              Turn in place to the left until a bumper switch is triggered, or
+                the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsbn</td>
+            <td>Timed&Switch;Backward;Neutral</td>
+            <td>TSBN(INT)<br />
+              Turn left while pivoting on the right wheel until a bumper switch
+                is triggered, or the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsfb</td>
+            <td>Timed&Switch;Forward;Backward</td>
+            <td>TSFB(INT)<br />
+              Turn in place to the right until a bumper switch is triggered,
+                or the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsff</td>
+            <td>Timed&Switch;Forward;Forward</td>
+            <td>TSFF(INT)<br />
+              Move forward until a bumper switch is triggered, or the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsfn</td>
+            <td>Timed&Switch;Forward;Neutral</td>
+            <td>TSFN(INT)<br />
+              Turn right while pivoting on the right wheel until a bumper switch
+                is triggered, or the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsnb</td>
+            <td>Timed&Switch;Neutral;Backward</td>
+            <td>TSNB(INT)<br />
+              Turn right while pivoting on the left wheel until a bumper switch
+                is triggered, or the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsnf</td>
+            <td>Timed&Switch;Neutral;Forward</td>
+            <td>TSNF(INT)<br />
+              Turn left while pivoting on the left wheel until a bumper switch
+                is triggered, or the specified time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>tsnn</td>
+            <td>Timed&Switch;Neutral;Neutral</td>
+            <td>TSNN(INT)<br />
+              Do not move; wait until a bumper switch is triggered, or the specified
+                time in milliseconds elapses.</td>
+          </tr>
+          <tr>
+            <td>turn</td>
+            <td>Robot Turns x degrees</td>
+            <td>Turn(INT)<br />
+              Turns the robot the number of degrees specified. You must first
+                calibrate the robot using distcal().</td>
+          </tr>
+          <tr>
+            <td>version</td>
+            <td>Returns the version number of RoboCalc</td>
+            <td>Version()<br />
+              Returns the RoboCalc version number as a decimal value.</td>
+          </tr>
+        </table>
+        <p>$Id$</p>
         </div>
       </td>
     </tr>
