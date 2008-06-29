@@ -1,5 +1,7 @@
+$Id$
 I think some of these may need fixing... for sure, the customen.89p program needs to be checked.
-These programs will run on the TI-89, TI92p and V200.
+These programs will run on the TI-89, TI92p and V200. If anyone wants to contribute new programs,
+and/or bug fixes to these programs, please post in the Detached Solution forums.
 
 robocalc.customen.89p	-	Setup the Custom Menu For Easy TI-Basic Programming with RoboCalc.
 
